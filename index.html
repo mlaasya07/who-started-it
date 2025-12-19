@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Who Started It?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="center">
+    <h1>Who Started It?</h1>
+    <p>Map your friend group. Let the graph talk.</p>
+
+    <button onclick="createGroup()">Create Group</button>
+  </div>
+
+  <script>
+    function createGroup() {
+      const id = Math.random().toString(36).substr(2, 6).toUpperCase();
+      localStorage.setItem("groupId", id);
+      localStorage.setItem("nodes", JSON.stringify([]));
+      localStorage.setItem("edges", JSON.stringify([]));
+      window.location.href = `quiz.html?group=${id}`;
+    }
+  </script>
+</body>
+</html>
