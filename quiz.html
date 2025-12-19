@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personality Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Personality Analyzer</h2>
+<p>Answer honestly. This analyzes interaction style, not identity.</p>
+
+<input id="name" placeholder="Name / Nickname" required>
+<input id="dob" type="date" required>
+
+<form id="quiz">
+
+<!-- E / I -->
+<p>1. In group chats, you usually:</p>
+<label><input type="radio" name="q1" value="E" required> Start conversations</label><br>
+<label><input type="radio" name="q1" value="I"> Reply selectively</label>
+
+<p>2. After social events, you feel:</p>
+<label><input type="radio" name="q2" value="E" required> Energized</label><br>
+<label><input type="radio" name="q2" value="I"> Drained</label>
+
+<!-- S / N -->
+<p>3. You trust people based on:</p>
+<label><input type="radio" name="q3" value="S" required> Consistent behavior</label><br>
+<label><input type="radio" name="q3" value="N"> Gut feeling</label>
+
+<p>4. You notice more:</p>
+<label><input type="radio" name="q4" value="S" required> What actually happened</label><br>
+<label><input type="radio" name="q4" value="N"> What it might mean</label>
+
+<!-- T / F -->
+<p>5. When friends vent, you:</p>
+<label><input type="radio" name="q5" value="T" required> Offer solutions</label><br>
+<label><input type="radio" name="q5" value="F"> Offer emotional support</label>
+
+<p>6. In conflicts, you value:</p>
+<label><input type="radio" name="q6" value="T" required> Fairness</label><br>
+<label><input type="radio" name="q6" value="F"> Harmony</label>
+
+<!-- J / P -->
+<p>7. Plans changing last-minute make you:</p>
+<label><input type="radio" name="q7" value="J" required> Stressed</label><br>
+<label><input type="radio" name="q7" value="P"> Excited</label>
+
+<p>8. Your workspace is usually:</p>
+<label><input type="radio" name="q8" value="J" required> Organized</label><br>
+<label><input type="radio" name="q8" value="P"> Controlled chaos</label>
+
+<!-- Chaos / Social role signals -->
+<p>9. When drama happens, you:</p>
+<label><input type="radio" name="q9" value="CALM" required> De-escalate</label><br>
+<label><input type="radio" name="q9" value="FUEL"> Watch it grow</label>
+
+<p>10. People rely on you to:</p>
+<label><input type="radio" name="q10" value="SUPPORT" required> Listen</label><br>
+<label><input type="radio" name="q10" value="CONNECT"> Connect people</label>
+
+</form>
+
+<button onclick="submitQuiz()">Submit</button>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
